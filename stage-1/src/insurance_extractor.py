@@ -5,6 +5,17 @@ import argparse
 
 
 def find_by_age_range(customers_df, from_age, to_age):
+    """
+    Filters the dataframe by age range.
+
+    Args:
+        customers_df (Dataframe): The customer dataframe.
+        from_age (int): Minimum age (inclusive).
+        to_age (int): Maximum age (inclusive).
+
+    Returns:
+        Dataframe: The filtered dataframe with columns name, phone and email.
+    """
     df = customers_df[
         (customers_df.age >= from_age) &
         (customers_df.age <= to_age)
@@ -13,6 +24,19 @@ def find_by_age_range(customers_df, from_age, to_age):
 
 
 def save_df_to_table(df, file_name):
+    """
+    Saves a dataframe in github table format to a file.
+
+    Args:
+        df (Dataframe): The dataframe.
+        file_name (string): Name of file.
+
+    Returns:
+        None
+
+    Raises:
+        TypeError: If dataframe is invalid.
+    """
     if type(df) != pd.core.frame.DataFrame:
         raise TypeError('Invalid dataframe')
     with open(file_name, 'w') as file:
@@ -23,6 +47,21 @@ def save_df_to_table(df, file_name):
 
 
 def save_df_to_yaml(df, root_name, file_name):
+    """
+    Saves a dataframe as a YAML file.
+
+    Args:
+        df (Dataframe): The dataframe.
+        root_name: The root element
+        file_name (string): Name of file.
+
+    Returns:
+        None
+
+    Raises:
+        TypeError: If dataframe is invalid.
+        ValueError: If root_name is not a non-empty string
+    """
     if type(df) != pd.core.frame.DataFrame:
         raise TypeError('Invalid dataframe')
     if type(root_name) != str or len(root_name) == 0:
