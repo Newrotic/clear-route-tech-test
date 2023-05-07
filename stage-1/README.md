@@ -28,3 +28,23 @@ Once complete:
 
  - The Customer Support teams tends to not be very technical so keep that mind when producing the .txt file.
  - Clean Code will be one of the score marks
+
+## Install
+- Setup a virtual env and install requirements:
+```
+python -m venv venv
+source venv/bin/activate
+pip -r requirements.txt
+```
+- Navigate to folder and set python path with:
+```
+cd stage-1; PYTHONPATH=$(pwd)
+```
+- Run extractor with the following (use flag -h for more options):
+```
+python src/insurance_extractor.py latest-customers.txt -o output/customers_to_check.txt
+```
+- Run tests with:
+```
+pytest -vsrfp test/test_insurance_extractor.py
+```
