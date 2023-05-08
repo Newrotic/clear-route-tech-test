@@ -1,0 +1,10 @@
+name,age,address,phone,email
+Kirestin Delaney,22,464-7197 Ultricies Ave,0800 326358,orci.lobortis@icloud.org
+Cassandra Hahn,37,Ap #842-9472 Ipsum. Street,(022) 7352 6302,enim.sed@icloud.couk
+Heather Farley,7,Ap #353-2356 Mauris St.,070 1171 0659,sagittis.duis.gravida@google.couk
+Macey Bernard,54,Ap #617-9273 Donec St.,(0118) 830 5233,arcu.iaculis.enim@outlook.edu
+Ivor Battle,12,925-1603 In Ave,(01376) 23913,curae.phasellus@yahoo.com
+Vernon Burks,37,"8903 Dolor, Av.",07716 949492,id@icloud.couk
+Kiona Farmer,1,632-4898 Metus. Rd.,0885 627 8278,mauris@outlook.org
+Valentine Hanson,1,"P.O. Box 334, 4439 Dolor. Avenue",07624 472868,nec.ante.blandit@protonmail.ca
+Otto Hunter,57,6697 Vehicula. Rd.,0908 260 7332,aliquam.tincidunt@hotmail.ca
