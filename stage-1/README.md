@@ -34,7 +34,7 @@ Once complete:
 ```
 python -m venv venv
 source venv/bin/activate
-pip -r requirements.txt
+pip install -r requirements.txt
 ```
 - Navigate to folder and set python path with:
 ```
